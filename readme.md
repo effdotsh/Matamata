@@ -28,11 +28,11 @@ Windows Tutorial: https://youtu.be/mLtNEUG9Hc4
 ### Mac
 
 - Install FFmpeg to the path. The easiest way to do this is install [Homebrew]("https://brew.sh/")
-  
-  ```zsh
+
+  ````zsh
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
-  ```
-  
+  ````
+
   ```zsh
   brew install ffmpeg
   ```
@@ -98,7 +98,7 @@ sudo apt install ffmpeg
 
 ### Character Folder
 
-See [/defaults/SampleCharacter](https://github.com/Matamata-Animator/Matamata-Core/tree/main/defaults/SampleCharacter) for an example of how to create your character folder. 
+See [/defaults/SampleCharacter](https://github.com/Matamata-Animator/Matamata-Core/tree/main/defaults/SampleCharacter) for an example of how to create your character folder.
 
 You can automatically generate your character.json file using https://eff.sh/matamata-character-creator/.
 
@@ -149,9 +149,9 @@ You can automatically generate your character.json file using https://eff.sh/mat
 
 `x` and `y` are the coordinates on the photo where the mouth should be placed.
 
-`facingLeft` indicates whether to mirror the mouth image. 
+`facingLeft` indicates whether to mirror the mouth image.
 
-`eyes` specifies a "placeable part". The sample character pose images don't have eyes, as these are specified by placeable parts. Although this example has placeable eyes, you can have placeable pins, objects in the background, or even hats.  `scale` specifies how much the placeable part image should be scaled up or down. `x` and `y` specify the location on the pose where the part should be placed. `images` contained key-value pairs where the key is the name of the part, and the value is the image name. This section shows angry, normal, and sad eye selections.
+`eyes` specifies a "placeable part". The sample character pose images don't have eyes, as these are specified by placeable parts. Although this example has placeable eyes, you can have placeable pins, objects in the background, or even hats. `scale` specifies how much the placeable part image should be scaled up or down. `x` and `y` specify the location on the pose where the part should be placed. `images` contained key-value pairs where the key is the name of the part, and the value is the image name. This section shows angry, normal, and sad eye selections.
 
 All pose images are in `CharacterFolder/poses`
 
@@ -185,13 +185,13 @@ You can also remove a placeable part by using the name `None`
 | -v           | How verbose to be (0 to 3).                                                                                                                                                   | 1                                                |
 | -transcriber | Which transcriber to use. Vosk doesn't require any setup, however it is the slowest.  (Whisper/LocalAI/Vosk)                                                                  | Whisper                                          |
 | -whisper_url | URL for the transcription API. By default, this points to OpenAI's Whisper. You can also set it to point to a [LocalAI](https://localai.io/basics/getting_started/) instance. | https://api.openai.com/v1/                       |
-| -vosk_url    | Url if using Vosk transcriber                                                                                                                                                 | https://matamata.org/web-vosk-transcriber/       |
+| -vosk_url    | Url if using Vosk transcriber                                                                                                                                                 | https://eff.sh/matamata-web-vosk-transcriber/    |
 | -aligner_url | URL for Gentle Aligner server.                                                                                                                                                | http://localhost:8765/transcriptions?async=false |
 | -phonemes    | Custom phonemes JSON path                                                                                                                                                     | By default, the sample phonemes is used          |
 
 #### Custom Defaults
 
-After running the program once, a `defaultArguments.json` file is created in your cache directory (the path to this file is printed at the start of the program running). I recommend storing your API key there. 
+After running the program once, a `defaultArguments.json` file is created in your cache directory (the path to this file is printed at the start of the program running). I recommend storing your API key there.
 
 ### Running
 
@@ -206,8 +206,8 @@ After running the program once, a `defaultArguments.json` file is created in you
 
 ## Contributing
 
-Do you use this project and want to see a new feature added? Open an issue with the tag *feature request* and say what you want.
+Do you use this project and want to see a new feature added? Open an issue with the tag _feature request_ and say what you want.
 
 Want to try your hand at writing code? Create a fork, upload your code, and make a pull request. Anything from fixing formatting/typos to entirely new features is welcome!
 
-Don't know what to work on? Take a look at the issues page to see what improvements people want. Anything marked *good first issue* should be great for newcomers!
+Don't know what to work on? Take a look at the issues page to see what improvements people want. Anything marked _good first issue_ should be great for newcomers!

@@ -153,7 +153,7 @@ func parseArgs() Args {
 	} else if args.Transcriber == "LocalAI" && args.WhisperUrl == "" {
 		args.WhisperUrl = "http://localhost:8080/v1/"
 	} else if args.Transcriber == "Vosk" && args.VoskUrl == "" {
-		args.VoskUrl = "https://matamata.org/web-vosk-transcriber/"
+		args.VoskUrl = "https://eff.sh/matamata-web-vosk-transcriber/"
 	}
 
 	if args.WhisperUrl == openAiUrl && args.TranscriberApiKey == "" {
